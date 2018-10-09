@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2uuk9#m%a54*00tg3pi6n8lbr(vgeq0e2t)cflgm8^q2xfm*6m'
+SECRET_KEY = 'vua5n^i9aa-bw)*488^9xzlz^-lnc9_!a05vp8t2c1b$&g5nf)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-	'namdiscrumy',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'namdiscrumy',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +76,9 @@ WSGI_APPLICATION = 'myscrumy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myscrumy',
+
+        'ENGINE':'django.db.backends.mysql',
+        'NAME': 'myscrumynamdi',
                 'USER':'root',
                 'PASSWORD': '',
                 'HOST': 'localhost',
@@ -86,7 +87,6 @@ DATABASES = {
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 
 # Password validation
